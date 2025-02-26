@@ -113,7 +113,7 @@ func (d *Daily) report() {
 		if err != nil {
 			log.Errorf("report error: %s", err)
 		} else {
-			log.Infof("report via channel %s success", v.provider)
+			log.Infof("report via channel: %s success", v.provider)
 		}
 	}
 }
