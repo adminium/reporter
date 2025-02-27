@@ -66,7 +66,7 @@ func NewDaily(options ...Option) *Daily {
 	conf := &Config{
 		runCron:    true,
 		cron:       cron.New(),
-		expression: "0 23 * * ?",
+		expression: "* 12 * * ?",
 		generator: func() (string, error) {
 			return fmt.Sprintf("report: %s\nhello!", nowDate()), nil
 		},
